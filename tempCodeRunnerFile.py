@@ -1,0 +1,2 @@
+
+imap.login(EMAIL_LOGIN, EMAIL_PASSWORD)

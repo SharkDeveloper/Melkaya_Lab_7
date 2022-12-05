@@ -1,0 +1,13 @@
+import imaplib
+import email
+from email.header import decode_header
+
+EMAIL_LOGIN = "pvalera336@gmail.com"
+EMAIL_PASSWORD  = "bunodgywqrnslsfr"
+imap = imaplib.IMAP4_SSL("imap.gmail.com", 993)
+imap.login(EMAIL_LOGIN, EMAIL_PASSWORD)
+imap.select("INBOX")
+print(1)
+imap.search(None, "UNSEEN")
+print(2)
+print(imap.list())
